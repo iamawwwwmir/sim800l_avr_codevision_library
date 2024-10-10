@@ -1,0 +1,14 @@
+#ifndef _LED_H
+#define _LED_H
+
+extern char data[100];
+extern int counter;
+
+void send_sms(  char *a,char *number_s);
+void phone_number_seprate(void);
+void sms_seprate(void);
+void time_hour_seprate(void);
+void time_minute_seprate(void);
+void sim800l_init(void);
+
+#endif

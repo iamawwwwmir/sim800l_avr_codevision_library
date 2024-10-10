@@ -1,0 +1,46 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+data                                                                              0x0280     100
+counter                                                                           0x02E4       2
+call                                                                              0x02E6     100
+sms                                                                               0x034A     100
+hour                                                                              0x03AE      20
+minute                                                                            0x03C2      20
+number                                                                            0x03D6      17
+por                                                                               0x03E7     100
+_base_y                                                                           0x044B       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+rx_wr_index                                                                       R5           1
+rx_rd_index                                                                       R4           1
+rx_counter                                                                        R7           1
+rx_buffer_overflow                                                                R2.0      1bit
+i                                                                                 R8,R9        2
+t                                                                                 R10,R11      2
+_lcd_x                                                                            R6           1
+_lcd_y                                                                            R13          1
+_lcd_maxx                                                                         R12          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+usart_rx_isr                                                                      0x00093     28
+main                                                                              0x000AF     66
+sim800l_init                                                                      0x000F1     13
+sms_seprate                                                                       0x000FE     20
+_lcd_write_nibble_G100                                                            0x00112     21
+_lcd_write_data                                                                   0x00127     12
+lcd_gotoxy                                                                        0x00133     13
+lcd_clear                                                                         0x00140     12
+lcd_putchar                                                                       0x0014C     21
+lcd_puts                                                                          0x00161     10
+lcd_init                                                                          0x0016B     45
+putchar                                                                           0x00198      7
+puts                                                                              0x0019F     14
